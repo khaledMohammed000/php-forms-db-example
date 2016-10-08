@@ -4,7 +4,28 @@
         <title>Php form example</title>
     </head>
     <body>
-        <form action="" method="post">
+    <?php
+        if(isset($_POST['submit'])){
+        //process form
+            printf('user name : %s <br> 
+                    password : %s <br>
+                    gender : %s <br>
+                    color : %s <br>
+                    language : %s <br>
+                    comments : %s <br>
+                    T&ampC : %s <br>',
+                    $_POST['name'],
+                    $_POST['password'],
+                    $_POST['gender'],
+                    $_POST['color'],
+                    implode(' ' , $_POST['languages']),
+                    $_POST['comments'],
+                    $_POST['tc']
+                );
+        }
+    ?>
+    <hr>
+    <form action="" method="post">
             User Name : <input type="text" name="name"><br>
             Password : <input type="password" name="password"><br>
             Gender :
@@ -17,7 +38,7 @@
                     <option value="#00f">blue</option>
                 </select><br>
             Languages Spoken :
-                <select name="languages" multiple size="3">
+                <select name="languages[]" multiple size="3">
                     <option value="en">English</option>
                     <option value="fr">French</option>
                     <option value="it">Italian</option>

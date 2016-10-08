@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82f70d65-86f0-4f1f-a2f4-87d67eb31c5e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/form.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/formsIntro.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/form.php" afterPath="$PROJECT_DIR$/form.php" />
     </list>
     <ignored path="php-test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,9 +57,13 @@
       <file leaf-file-name="form.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/form.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="539">
-              <caret line="26" column="60" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
-              <folding />
+            <state relative-caret-position="364">
+              <caret line="40" column="41" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="41" />
+              <folding>
+                <marker date="1475961250660" expanded="true" signature="795:1851" ph="..." />
+                <marker date="1475961250660" expanded="true" signature="1147:1338" ph="..." />
+                <marker date="1475961250660" expanded="true" signature="1435:1628" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -230,12 +232,12 @@
       <workItem from="1475930652428" duration="9162000" />
       <workItem from="1475944855087" duration="328000" />
       <workItem from="1475947290163" duration="113000" />
-      <workItem from="1475947494377" duration="6202000" />
+      <workItem from="1475947494377" duration="8562000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15805000" />
+    <option name="totallyTimeSpent" value="18165000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -325,11 +327,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="996" column="9" selection-start-line="996" selection-start-column="9" selection-end-line="996" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/form.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="26" column="60" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
-          <folding />
+        <state relative-caret-position="364">
+          <caret line="40" column="41" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="41" />
+          <folding>
+            <marker date="1475961250660" expanded="true" signature="795:1851" ph="..." />
+            <marker date="1475961250660" expanded="true" signature="1147:1338" ph="..." />
+            <marker date="1475961250660" expanded="true" signature="1435:1628" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
