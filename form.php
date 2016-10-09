@@ -14,14 +14,17 @@
                     language : %s <br>
                     comments : %s <br>
                     T&ampC : %s <br>',
-                    $_POST['name'],
-                    $_POST['password'],
-                    $_POST['gender'],
-                    $_POST['color'],
-                    implode(' ' , $_POST['languages']),
-                    $_POST['comments'],
-                    $_POST['tc']
+                    htmlspecialchars($_POST['name']),
+                    htmlspecialchars($_POST['password']),
+                    htmlspecialchars($_POST['gender']),
+                    htmlspecialchars($_POST['color']),
+                    htmlspecialchars(implode(' ' , $_POST['languages'])),
+                    htmlspecialchars($_POST['comments']),
+                    htmlspecialchars($_POST['tc'])
                 );
+            //htmlspecialchars() /// supreesses the meaning of html tags if inputted
+            //implode('pattern',array of strings):  outputs array of string as a single string with
+            //                                      pattern in between them
         }
     ?>
     <hr>
