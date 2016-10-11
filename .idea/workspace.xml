@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82f70d65-86f0-4f1f-a2f4-87d67eb31c5e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db-select.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db-update.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db-select.php" afterPath="$PROJECT_DIR$/db-select.php" />
     </list>
     <ignored path="php-test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,14 +67,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="db-select.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="db-select.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db-select.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+            <state relative-caret-position="475">
+              <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
               <folding>
-                <marker date="1476195491598" expanded="true" signature="172:191" ph="SELECT * FRO... users" />
-                <marker date="1476195491598" expanded="true" signature="309:318" ph="..." />
+                <marker date="1476197089392" expanded="true" signature="172:191" ph="SELECT * FRO... users" />
+                <marker date="1476197089392" expanded="true" signature="309:318" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="db-update.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/db-update.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="50" column="42" selection-start-line="50" selection-start-column="42" selection-end-line="50" selection-end-column="42" />
+              <folding>
+                <marker date="1476197154412" expanded="true" signature="856:915" ph="UPDATE users... " />
+                <marker date="1476197154412" expanded="true" signature="856:925" ph="UPDATE users... " />
+                <marker date="1476197154412" expanded="true" signature="862:915" ph="INSERT INTO users... " />
+                <marker date="1476197154412" expanded="true" signature="1351:1382" ph="SELECT * FRO... users" />
               </folding>
             </state>
           </provider>
@@ -97,6 +113,7 @@
         <option value="$PROJECT_DIR$/form-prefilling.php" />
         <option value="$PROJECT_DIR$/db-insert.php" />
         <option value="$PROJECT_DIR$/db-select.php" />
+        <option value="$PROJECT_DIR$/db-update.php" />
       </list>
     </option>
   </component>
@@ -253,12 +270,12 @@
       <workItem from="1475930652428" duration="9162000" />
       <workItem from="1475944855087" duration="328000" />
       <workItem from="1475947290163" duration="113000" />
-      <workItem from="1475947494377" duration="31805000" />
+      <workItem from="1475947494377" duration="33466000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41408000" />
+    <option name="totallyTimeSpent" value="43069000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -422,11 +439,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db-select.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+        <state relative-caret-position="475">
+          <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
           <folding>
-            <marker date="1476195491598" expanded="true" signature="172:191" ph="SELECT * FRO... users" />
-            <marker date="1476195491598" expanded="true" signature="309:318" ph="..." />
+            <marker date="1476197089392" expanded="true" signature="172:191" ph="SELECT * FRO... users" />
+            <marker date="1476197089392" expanded="true" signature="309:318" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db-update.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="50" column="42" selection-start-line="50" selection-start-column="42" selection-end-line="50" selection-end-column="42" />
+          <folding>
+            <marker date="1476197154412" expanded="true" signature="856:915" ph="UPDATE users... " />
+            <marker date="1476197154412" expanded="true" signature="856:925" ph="UPDATE users... " />
+            <marker date="1476197154412" expanded="true" signature="862:915" ph="INSERT INTO users... " />
+            <marker date="1476197154412" expanded="true" signature="1351:1382" ph="SELECT * FRO... users" />
           </folding>
         </state>
       </provider>
