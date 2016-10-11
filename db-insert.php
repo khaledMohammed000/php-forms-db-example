@@ -32,9 +32,9 @@ if(isset($_POST['submit'])){
 
     //code for inserting data into DB goes here
     if($ok){
-        $db = mysqli_select_db('localhost','root','','php');
+        $db = mysqli_connect('localhost','root','','php');
         //this is done to prevent sql injection
-        $sql = sprintf("INSER INTO users (name , gender,color)
+        $sql = sprintf("INSERT INTO users (name , gender,color)
          VALUES ('%s','%s','%s')",
         mysqli_real_escape_string($db,$name),
         mysqli_real_escape_string($db,$gender),
