@@ -1,15 +1,11 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: user-1
- * Date: 10/11/2016
- * Time: 8:29 PM
- */
-if(isset($_GET['id']) &&ctype_digit($_GET['id'])){
+
+if(isset($_GET['id']) && ctype_digit($_GET['id'])){
     $id = $_GET['id'];
 }else{
-    header('Location : db-select.php');
+    header('Location: db-select.php');
 }
+
 ?>
 <!doctype html>
 <html>
@@ -17,6 +13,9 @@ if(isset($_GET['id']) &&ctype_digit($_GET['id'])){
     <title>db-delete</title>
 </head>
 <body>
+<?php
+readfile('navigation.tmpl.html');
+?>
 <?php
 $db = mysqli_connect('localhost','root','','php');
 $sql = "DELETE FROM users WHERE id=$id";

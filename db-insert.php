@@ -5,9 +5,14 @@
 </head>
 <body>
 <?php
+readfile('navigation.tmpl.html');
+?>
+<?php
+
 $name = '';
 $gender = '';
 $color = '';
+$password = '';
 
 if(isset($_POST['submit'])){
     $ok=true;
@@ -15,6 +20,12 @@ if(isset($_POST['submit'])){
         $ok=false;
     }else{
         $name=$_POST['name'];
+    }
+
+    if(!isset($_POST['password']) || $_POST['password'] === ''){
+        $ok=false;
+    }else{
+        $password=$_POST['password'];
     }
 
     if(!isset($_POST['gender']) || $_POST['gender'] === ''){
@@ -34,9 +45,10 @@ if(isset($_POST['submit'])){
     if($ok){
         $db = mysqli_connect('localhost','root','','php');
         //this is done to prevent sql injection
-        $sql = sprintf("INSERT INTO users (name , gender,color)
-         VALUES ('%s','%s','%s')",
+        $sql = sprintf("INSERT INTO users (name ,password, gender,color)
+         VALUES ('%s','%s','%s','%s')",
         mysqli_real_escape_string($db,$name),
+        mysqli_real_escape_string($db,password_hash($password,PASSWORD_DEFAULT)),
         mysqli_real_escape_string($db,$gender),
         mysqli_real_escape_string($db,$color));
 
@@ -52,6 +64,8 @@ if(isset($_POST['submit'])){
 
 <form action="" method="post">
     User Name : <input type="text" name="name" value="<?php echo htmlspecialchars($name);?>"> <br>
+
+    Password : <input type="password" name="password"> <br>
 
     Gender : <input type="radio" name="gender" value="m" <?php if($gender === 'm'){echo 'checked';}?>> Male
              <input type="radio" name="gender" value="f" <?php if($gender === 'f'){echo 'checked';}?>> Female <br>

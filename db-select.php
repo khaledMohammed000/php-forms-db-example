@@ -5,6 +5,9 @@
     <title>db-select</title>
 </head>
 <body>
+<?php
+readfile('navigation.tmpl.html');
+?>
     <ul>
         <?php
         $db= mysqli_connect('localhost','root','','php');
