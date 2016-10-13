@@ -6,6 +6,7 @@
 </head>
 <body>
 <?php
+require 'auth.php';
 readfile('navigation.tmpl.html');
 ?>
     <ul>
