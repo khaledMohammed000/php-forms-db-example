@@ -1,14 +1,27 @@
+<?php
+require 'auth.php';
+?>
+
+<?php
+if(isset($_POST['Logout']) && $_POST['Logout'] == 'logout'){
+    unset($_SESSION["isAdmin"]);
+    header('Location: login.php');
+}
+?>
 <!doctype html>
 <html>
-
 <head>
     <title>db-select</title>
+
 </head>
 <body>
 <?php
-require 'auth.php';
 readfile('navigation.tmpl.html');
 ?>
+<form action="" method="post">
+<input type="submit" name="Logout" value="logout">
+</form>
+
     <ul>
         <?php
         $db= mysqli_connect('localhost','root','','php');
